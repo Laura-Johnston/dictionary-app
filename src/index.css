@@ -2,9 +2,10 @@ header {
  text-align:center;
  font-size: 40px;
  color: violet;
-font-family:'Poppins', sans-serif;
 text-decoration: underline;
  
 }
 
-
+*{
+  font-family:'Poppins', sans-serif;
+}

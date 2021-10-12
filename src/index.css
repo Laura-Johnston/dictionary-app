@@ -1,11 +1,21 @@
-header {
+header #title{
  text-align:center;
- font-size: 40px;
+ font-size: 40px; 
  color: violet;
+
 text-decoration: underline;
  
 }
 
+#result{
+  text-transform:capitalize ;
+}
+
+form input{
+  margin: 2px;
+}
 *{
+  font-size: 20px;
+  text-align: center;
   font-family:'Poppins', sans-serif;
 }

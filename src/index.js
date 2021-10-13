@@ -8,7 +8,7 @@ import Dictionary from './Dictionary';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Dictionary />
+    <Dictionary defaultWord="dictionary"/>
   </React.StrictMode>,
   document.getElementById('root')
 );

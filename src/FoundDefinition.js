@@ -8,7 +8,7 @@ export default function FoundDefinition(props){
         <div className='Meaning'>
         <h3 className='result'>{props.meaning.partOfSpeech}</h3>
         {props.meaning.definitions.map(function(definition,index){
-            console.log(`defintion: ${definition.definition}`);
+            //console.log(`defintion: ${definition.definition}`);
             return(
                 <div key ={index}>
                 <h5><strong>

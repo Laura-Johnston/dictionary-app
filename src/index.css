@@ -7,15 +7,18 @@ text-decoration: underline;
  
 }
 
-#result{
+.result{
   text-transform:capitalize ;
+}
+#word{
+  font-size: 22px;
 }
 
 form input{
   margin: 2px;
 }
 *{
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-family:'Poppins', sans-serif;
 }

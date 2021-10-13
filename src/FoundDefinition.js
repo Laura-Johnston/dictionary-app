@@ -1,12 +1,12 @@
 import React from "react";
 import './FoundDefinitions.css';
-
+import Synonyms from './Synonyms';
 
 export default function FoundDefinition(props){
     
     return (
         <div className='Meaning'>
-        <h3>{props.meaning.partOfSpeech}</h3>
+        <h3 className='result'>{props.meaning.partOfSpeech}</h3>
         {props.meaning.definitions.map(function(definition,index){
             console.log(`defintion: ${definition.definition}`);
             return(
@@ -15,9 +15,10 @@ export default function FoundDefinition(props){
                 {definition.definition}
                 </strong></h5>
                 <br />
-                <p><em>
+                <em>
                 {definition.example}
-                </em></p>
+                </em>
+                <Synonyms synonyms={definition.synonyms} />
                 </div> 
             );
         })}

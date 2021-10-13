@@ -5,7 +5,7 @@ export default function DefinitionResults(props) {
     if (props.results) {
         return(
             <div>
-                <h2 id='result'>{props.results.word}</h2>
+                <h2 className='result' id='word'>{props.results.word}</h2>
                 {props.results.meanings.map(function(meaning, index) {
     //console.log(meaning.definitions[0].definition);
                     return(

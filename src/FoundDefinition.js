@@ -5,20 +5,19 @@ import Synonyms from './Synonyms';
 export default function FoundDefinition(props){
     
     return (
-        <div className='Meaning'>
-        <h3 className='result'>{props.meaning.partOfSpeech}</h3>
+        <div className='meaning'>
+        <h2 className='meaning'>{props.meaning.partOfSpeech}</h2><br />
         {props.meaning.definitions.map(function(definition,index){
             //console.log(`defintion: ${definition.definition}`);
             return(
-                <div key ={index}>
-                <h5><strong>
+                <div key ={index} className='definitionMeaning'>
+                <h4>
                 {definition.definition}
-                </strong></h5>
-                <br />
-                <em>
+                </h4> 
+                <h5>
                 {definition.example}
-                </em>
-                <Synonyms synonyms={definition.synonyms} />
+                </h5>
+                <Synonyms synonyms={definition.synonyms} /> <br />
                 </div> 
             );
         })}

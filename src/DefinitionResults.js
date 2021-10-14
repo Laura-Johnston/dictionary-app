@@ -6,26 +6,29 @@ export default function DefinitionResults(props) {
     if (props.results) {
         return(
             <div>
-                <section>
-                    <h2 className='result' id='word'>{props.results.word}</h2>
+                <section className ='defintionResults section'>
+                    <h1 className='result' id='word'>
+                        {props.results.word}</h1>
                     {props.results.phonetics.map(function(phonetic, index){
-                        return(
-                        <div key={index}>
-                            <Phonetic phonetic={phonetic}/>
+                       return(
+                        <div key={index} className="phonetic">
+                            <Phonetic phonetic={phonetic}/><br />
                         </div>
                     );
              })}
              </section>
+             <section className='section'>
                 {props.results.meanings.map(function(meaning, index) {
     //console.log(meaning.definitions[0].definition);
-                    return(
-                        <div key={index}>
-                            <section>
+                    return( 
+                            
+                           
                             <FoundDefinition meaning={meaning}/>
-                            </section>
-                        </div>
+                            
+                            
                     );
                 })}
+           </section> 
             </div>
 
         );

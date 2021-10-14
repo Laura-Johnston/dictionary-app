@@ -21,7 +21,7 @@ function dictionarySearch(){
     axios.get(apiUrl).then(grabDefinition);
 //pexels api call
     const pexelsAPI = `563492ad6f91700001000001f1d2fc4df3724237bed9b4c1ee02881b`;
-    let pexelsURL =`https://api.pexels.com/v1/search?query=${word}&per_page=3`;
+    let pexelsURL =`https://api.pexels.com/v1/search?query=${word}&per_page=6`;
     let headers ={ Authorization: `Bearer ${pexelsAPI}` };
     axios.get(pexelsURL, { headers: headers }).then(handlePexelsResponse);
 
@@ -47,17 +47,20 @@ function load(){
 
 if (loaded){
 return(
-    <div>
-        <section>
-            <h5>What word do you need defined?</h5>
+<div class='container'>
+    <div className='top'>
+        <section className='section'>
+        <h3>what word do you need defined?</h3>
         <form onSubmit ={handleSubmit}>
-            <input type ='search' placeholder='type word for definition' onChange={handleWordSubmit} />
-            <input type='submit' value='submit'/>
+        <input type="search" class="form-search" placeholder="Search" autoFocus onChange={handleWordSubmit}/>
+        <input class="btn btn-outline-secondary" type="submit" id="search-button" value='Search'/>
         </form>
         </section>
+        </div>
         <DefinitionResults results={results} />
         <Photos photos={photos} />
-    </div>
+   
+   </div>
 )
 } else{
     load();

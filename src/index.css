@@ -157,10 +157,10 @@ height: 60%;
 
 #search-button{
   font-size: 15px;
-  border-radius: 8px;
+  margin-top: 4px;
   width: 25%;
-  height: 15%;
-  padding:4px
+  height: 12%;
+  padding:4px;
 }
 
 #backToTop i{

@@ -122,7 +122,7 @@ footer{
   margin-bottom: 2%;
 }
 #backToTop i{
-  margin-left: 95%;
+  margin-left: 93%;
   font-size: 50px;
   margin-top: -80px;
   z-index: 10;
@@ -137,3 +137,61 @@ footer{
   margin-top: 2%;
   font-weight: 500;
 }
+
+/*MEDIA QUERY
+*/
+@media ( max-width: 420px ) {
+  header{
+    margin-top: 8%;
+  }
+.form-search{
+  text-align: center;
+  margin-left: 7%;
+  margin-bottom: 4% ;
+
+  width: 60%;
+
+}
+
+#search-button{
+  font-size: 15px;
+  width: 25%;
+}
+
+#backToTop i{
+  margin-left: 50%;
+  font-size: 40px;
+ display: none;
+ 
+}
+
+footer{
+  margin-top: 3%;
+}
+#hidden{
+  display: none;
+}
+#codedBy{
+  margin-left: 19%; 
+  margin-top: 40px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

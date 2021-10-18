@@ -174,8 +174,12 @@ footer{
 #codedBy{
   margin-left: 19%; 
   margin-top: 40px;
-  
 }
+.meaning h2{
+  font-weight: 600;
+  margin:  0 0 1% 0px;
+  
+ }
 
 
 

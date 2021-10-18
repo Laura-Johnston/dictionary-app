@@ -1,10 +1,10 @@
 import React from "react";
 import './FoundDefinitions.css';
 import Synonyms from './Synonyms';
-
 export default function FoundDefinition(props){
     
     return (
+
         <div className='meaning'>
         <h2 className='meaning'>{props.meaning.partOfSpeech}</h2><br />
         {props.meaning.definitions.map(function(definition,index){

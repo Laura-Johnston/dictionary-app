@@ -18,8 +18,13 @@ section{
   background-color: #fff;
   padding:3% 2% 0 4%;
   border-radius: 12px;
+  z-index: 1;
   margin: 2% 0 0 1%;
-  box-shadow: 0 10px 18px 0  rgb(215, 156, 230)
+  /*box-shadow: 0 10px 18px 0  rgb(215, 156, 230)*/
+  box-shadow: 0 10px 18px 0 rgb(169, 151, 173);
+}
+li{
+  list-style: none;
 }
 
 
@@ -43,6 +48,8 @@ background-color: var(--button-color);
 color: #fff;
   font-size: 20px;
 }
+
+
 
 .top h3{
   text-align: center;
@@ -110,7 +117,23 @@ font-weight: 600;
 .definitionMeaning h4, .definitionMeaning h5{
   margin-bottom: 1%
 }
-
-li{
-  list-style: none;
+/* Footer */
+footer{
+  margin-bottom: 2%;
+}
+#backToTop i{
+  margin-left: 95%;
+  font-size: 50px;
+  margin-top: -80px;
+  z-index: 10;
+}
+#backToTop a
+{
+  color: var(--button-color);
+  animation-delay: 2ms;
+}
+#codedBy{
+  margin-left: 12%;
+  margin-top: 2%;
+  font-weight: 500;
 }

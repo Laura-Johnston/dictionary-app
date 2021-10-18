@@ -148,8 +148,10 @@ footer{
   text-align: center;
   margin-left: 7%;
   margin-bottom: 4% ;
-
+height: 60%;
   width: 60%;
+  border-radius: 20px;
+  border:grey .5px solid;
 
 }
 
@@ -172,7 +174,7 @@ footer{
   display: none;
 }
 #codedBy{
-  margin-left: 19%; 
+  margin-left: 16%; 
   margin-top: 40px;
 }
 .meaning h2{
